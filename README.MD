@@ -99,7 +99,7 @@ GEMINI_API_KEY="your_API_key"
 streamlit run app.py
 
 ## 📊 Sample Extraction Payload (JSON)
-
+``` JSON
 {
   "is_name_matched": true,
   "confidence_score": 0.98,
@@ -116,6 +116,7 @@ streamlit run app.py
   "status": "AUTO_APPROVE",
   "flag_reason": null
 }
+```
 ## 🛣 Future Roadmap
 [ ] Anthropic Claude 3.5 Sonnet Integration for multi-page PDF analysis.
 
