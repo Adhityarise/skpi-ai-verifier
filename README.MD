@@ -58,7 +58,7 @@ Frontend & Dashboard: Streamlit
 
 Backend Runtime: Python 3.10+
 
-AI Engine: Google Gemini Vision API (gemini-2.5-flash / gemini-3.1-flash)
+AI Engine: Google Gemini Vision API (gemini-3.5-flash-lite)
 
 Environment & Config: python-dotenv, Pillow
 
