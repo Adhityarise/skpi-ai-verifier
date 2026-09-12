@@ -65,6 +65,7 @@ Environment & Config: python-dotenv, Pillow
 ## 📦 Installation & Setup
 
 1. Prerequisites
+
 Ensure you have Python 3.10 or higher installed on your local machine.
 
 2. Clone Repository
