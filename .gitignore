@@ -1,0 +1,10 @@
+# Sembunyikan API Key & Environment
+.env
+venv/
+__pycache__/
+*.json
+*.pyc
+
+# Sembunyikan config VS Code / Temp
+.vscode/
+.DS_Store
