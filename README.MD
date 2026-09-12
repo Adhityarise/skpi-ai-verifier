@@ -70,7 +70,7 @@ Ensure you have Python 3.10 or higher installed on your local machine.
 2. Clone Repository
 
 
-git clone [https://github.com/your-username/skpi-ai-verifier.git](https://github.com/your-username/skpi-ai-verifier.git)
+git clone [https://github.com/Adhityarise/skpi-ai-verifier.git](https://github.com/your-username/skpi-ai-verifier.git)
 
 cd skpi-ai-verifier
 
