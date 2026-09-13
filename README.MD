@@ -9,7 +9,7 @@ An AI-powered document verification system designed to automate and validate **S
 Manual verification of student achievement certificates is a major administrative bottleneck in universities. **SKPI AI Verifier** solves this by introducing a dual-stage auditing pipeline:
 
 1. **Automated Vision Extraction (80% Workload):** Validates document authenticity, recipient matching, issuing entities, signatures, and compulsory criteria (e.g., required internship hours or exam scores).
-2. **Human-in-the-Loop Safeguard (20% Workload):** Automatically flags low-confidence extractions, missing mandatory fields, or degraded document quality for manual admin review.
+2. **Human-in-the-Loop Safeguard (20% Workload): Flags low-confidence extractions, missing mandatory fields, or degraded document quality for review within the app. Routing flagged items to an actual admin queue is on the roadmap (see below).
 
 ---
 
@@ -18,7 +18,7 @@ Manual verification of student achievement certificates is a major administrativ
 * **Multimodal Document Parsing:** Processes student certificates directly from image files (`.jpg`, `.jpeg`, `.png`) using Gemini Vision AI.
 * **Structured XML Prompting:** Enforces strict compliance with institutional guidelines using structured XML prompt wrappers.
 * **Guaranteed JSON Schema:** Forces LLM responses into strict JSON for seamless API integration and database persistence.
-* **Smart Exception Handling:** Automatically redirects anomalies, missing mandatory attributes (e.g., missing internship duration), or blurry images to administrative review.
+* **Smart Exception Handling: Automatically detects anomalies, missing mandatory attributes (e.g., missing internship duration), or blurry images and surfaces them as MANUAL_REVIEW in the app.
 * **Environment Isolation:** Zero hardcoded API credentials; utilizes `.env` management and `.gitignore` protocols.
 
 ---
@@ -49,7 +49,7 @@ Manual verification of student achievement certificates is a major administrativ
 • High Confidence Score (>90%)     • Image Blur / Anomaly
        │                                     │
        ▼                                     ▼
-(Included in SKPI)                 (Flagged to Campus Admin)
+(Included in SKPI)                 (Flagged for Review — admin routing: planned)
 ```
 
 ## 🛠 Tech Stack
@@ -105,11 +105,11 @@ streamlit run app.py
   "confidence_score": 0.98,
   "category": "achievements",
   "extracted_data": {
-    "recipient_name": "Target_name",
-    "activity_title": "activity_name",
-    "issuing_institution": "institution_name",
-    "issue_date": "1989-12-24",
-    "rank_or_role": "rank",
+    "recipient_name": "Budi",
+    "activity_title": "JUARA 2 Business plan competition",
+    "issuing_institution": "HIMA",
+    "issue_date": "2020-12-24",
+    "rank_or_role": "Lead Team",
     "duration_hours": null,
     "score_or_grade": null
   },
