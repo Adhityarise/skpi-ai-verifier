@@ -18,7 +18,7 @@ Manual verification of student achievement certificates is a major administrativ
 * **Multimodal Document Parsing:** Processes student certificates directly from image files (`.jpg`, `.jpeg`, `.png`) using Gemini Vision AI.
 * **Structured XML Prompting:** Enforces strict compliance with institutional guidelines using structured XML prompt wrappers.
 * **Guaranteed JSON Schema:** Forces LLM responses into strict JSON for seamless API integration and database persistence.
-* **Smart Exception Handling: Automatically detects anomalies, missing mandatory attributes (e.g., missing internship duration), or blurry images and surfaces them as MANUAL_REVIEW in the app.
+* **Smart Exception Handling:** Automatically detects anomalies, missing mandatory attributes (e.g., missing internship duration), or blurry images and surfaces them as MANUAL_REVIEW in the app.
 * **Environment Isolation:** Zero hardcoded API credentials; utilizes `.env` management and `.gitignore` protocols.
 
 ---
