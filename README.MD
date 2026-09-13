@@ -9,7 +9,7 @@ An AI-powered document verification system designed to automate and validate **S
 Manual verification of student achievement certificates is a major administrative bottleneck in universities. **SKPI AI Verifier** solves this by introducing a dual-stage auditing pipeline:
 
 1. **Automated Vision Extraction (80% Workload):** Validates document authenticity, recipient matching, issuing entities, signatures, and compulsory criteria (e.g., required internship hours or exam scores).
-2. **Human-in-the-Loop Safeguard (20% Workload): Flags low-confidence extractions, missing mandatory fields, or degraded document quality for review within the app. Routing flagged items to an actual admin queue is on the roadmap (see below).
+2. **Human-in-the-Loop Safeguard (20% Workload):** Flags low-confidence extractions, missing mandatory fields, or degraded document quality for review within the app. Routing flagged items to an actual admin queue is on the roadmap (see below).
 
 ---
 
